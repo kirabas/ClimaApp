@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		522B035A28847F4A00A79972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B035928847F4A00A79972 /* AppDelegate.swift */; };
 		522B035C28847F4A00A79972 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B035B28847F4A00A79972 /* SceneDelegate.swift */; };
-		522B035E28847F4A00A79972 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B035D28847F4A00A79972 /* ViewController.swift */; };
+		522B035E28847F4A00A79972 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B035D28847F4A00A79972 /* WeatherViewController.swift */; };
 		522B036128847F4A00A79972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522B035F28847F4A00A79972 /* Main.storyboard */; };
 		522B036328847F4B00A79972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522B036228847F4B00A79972 /* Assets.xcassets */; };
 		522B036628847F4B00A79972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522B036428847F4B00A79972 /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		522B035628847F4A00A79972 /* ClimaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		522B035928847F4A00A79972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		522B035B28847F4A00A79972 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		522B035D28847F4A00A79972 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		522B035D28847F4A00A79972 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		522B036028847F4A00A79972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		522B036228847F4B00A79972 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522B036528847F4B00A79972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,11 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				522B036D28847FFC00A79972 /* Model */,
+				522B0374288481DA00A79972 /* View */,
+				522B03752884820100A79972 /* Controllers */,
+				522B036228847F4B00A79972 /* Assets.xcassets */,
 				522B035928847F4A00A79972 /* AppDelegate.swift */,
 				522B035B28847F4A00A79972 /* SceneDelegate.swift */,
-				522B035D28847F4A00A79972 /* ViewController.swift */,
-				522B035F28847F4A00A79972 /* Main.storyboard */,
-				522B036228847F4B00A79972 /* Assets.xcassets */,
 				522B036428847F4B00A79972 /* LaunchScreen.storyboard */,
 				522B036728847F4B00A79972 /* Info.plist */,
 			);
@@ -82,6 +82,22 @@
 				522B03722884808A00A79972 /* WeatherModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		522B0374288481DA00A79972 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				522B035F28847F4A00A79972 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		522B03752884820100A79972 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				522B035D28847F4A00A79972 /* WeatherViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				522B035E28847F4A00A79972 /* ViewController.swift in Sources */,
+				522B035E28847F4A00A79972 /* WeatherViewController.swift in Sources */,
 				522B03712884806000A79972 /* WeatherData.swift in Sources */,
 				522B035A28847F4A00A79972 /* AppDelegate.swift in Sources */,
 				522B036F2884803500A79972 /* WeatherManager.swift in Sources */,
