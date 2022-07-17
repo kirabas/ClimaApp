@@ -47,6 +47,7 @@ extension WeatherViewController: UITextFieldDelegate {
         searchTextField.endEditing(true)
         print(searchTextField.text!)
     }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
        searchTextField.endEditing(true)
        print(searchTextField.text!)
